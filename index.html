@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>Spotify Web Player</title>
+</head>
+<body>
+    <div class="main-container">
+        <!--Navigation menu-->
+        <nav class="sidebar-menu">
+
+            <!--Logo & nome-->
+            <div class="logo-container">
+                <img class="icon" src="https://image.flaticon.com/icons/png/512/2582/2582550.png" alt="spotify-logo" width="35px">
+                <span class="title">Spotify</span>
+            </div>
+
+            <!--Menu-->
+            <ul class="navigation-menu">
+                <li><a href="#"><img class="icon" width="25px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Home-icon.svg/1200px-Home-icon.svg.png" alt="home" > <span class="men-item">Home</span></a></li>
+                <li><a href="#"><img width="25px" class="icon"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/768px-Search_Icon.svg.png" alt="search"> <span class="men-item">Search</span></a></li>
+                <li><a href="#"><img class="icon" width="25px"  src="https://cdn0.iconfinder.com/data/icons/spotify-line-ui-kit/100/your-library-line-512.png" alt="libray"> <span class="men-item">Your library</span> </a></li>
+            </ul>
+
+            <!--Playlist-->
+            <div class="playlist-container">
+                <p>PLAYLISTS</p>
+
+                <a href="" class="playlist">
+                    <img class="like" src="https://i.ibb.co/FD243zN/D-u3-XSq-U8-AAq-H-S.jpg" alt="liked-songs" width="30px">
+                    <p>Liked songs</p>
+                </a>
+
+                <a href="#" class="playlist" onclick="addPlaylist()">
+                    <img class="icon" src="https://www.svgrepo.com/show/121146/add-circular-interface-button.svg" alt="create-playlist" width="25px">
+                    <p>Create Playlist</p>
+                </a>
+                <ul id="myList">
+                    <li>Playlist1</li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <!--Contenuto principale-->
+        <main class="content">
+
+            <!--Barra iniziale-->
+            <div class="top-bar">
+                <div class="arrow-container">
+                    <span><a href="">&#65124;</a></span>
+                    <span><a href="">&#65125;</a></span>
+                </div>
+
+
+                <div class="profile">
+                    <a href="">
+                        <img width="50px" src="https://sonderdram.com/wp-content/uploads/2018/04/Person-Icon.png" alt="profile">
+                    </a>
+                </div>
+            </div>
+
+
+            <!--Contenuto pagina-->
+
+            <nav class="nav-categories">
+                <ul class="navigation">
+                    <li><a href="">IN EVIDENZA</a></li>
+                    <li><a href="">PODCAST</a></li>
+                    <li><a href="">CLASSIFICHE</a></li>
+                    <li><a href="">NUOVE USCITE</a></li>
+                </ul>
+            </nav>
+
+
+            <div class="contenitore">
+                <h3 class="playlist_title">Ascoltati di recente</h3>
+
+                <div class="album-container">
+
+                    <div class="card">
+                        <img class="img-album" src="https://i.pinimg.com/originals/fe/5c/36/fe5c36b8b4cbaa728f3c03a311e002cb.png" alt="liked-songs">
+                        <p>Brani che ti piacciono</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-album" src="https://images-na.ssl-images-amazon.com/images/I/716ZuJ-sejL._AC_SL1200_.jpg" alt="liked-songs">
+                        <p>Operation Doomsday</p>
+                        <p class="artist">MF DOOM</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-album" src="https://cdn.shopify.com/s/files/1/2028/2587/products/AVDS-500_480d7fa3-97f1-4009-ba1b-2d85400e8ed2_345x@2x.jpg?v=1548772934" alt="liked-songs">
+                        <p>Adversus</p>
+                        <p class="artist">Colle Der Fomento</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-album" src="https://images.genius.com/9736a1e8ad4f09de27696b5b7d99ea75.1000x1000x1.jpg" alt="liked-songs">
+                        <p>Chi More Pe Mme</p>
+                        <p class="artist">Cosang</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-album" src="https://www.serendeepity.net/wp-content/uploads/2019/09/dangerdoom-the-mouse-and-the-mask.jpg" alt="liked-songs">
+                        <p>THE MOUSE & THE MASK</p>
+                        <p class="artist">DANGERDOOM</p>
+                    </div>
+                </div>
+
+                <h3 class="playlist_title">Nuove uscite per te</h3>
+                <div class="album-container">
+
+                    <div class="card">
+                        <img class="img-album" src="https://img.tmstor.es/oceanwisdom/74143-fce01517a8cd927a2574dcda3bd4ed6a.png" alt="liked-songs">
+                        <p>Stay Sane</p>
+                        <p class="artist">Ocean Wisdom</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-album" src="https://f4.bcbits.com/img/0023698988_10.jpg" alt="liked-songs">
+                        <p>Misdiagnosis Of Chyvonne Johnson</p>
+                        <p class="artist">Truemendous</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-album" src="https://static.stereogum.com/uploads/2021/04/freddie-gibbs-big-boss-rabbit-1617322494-1000x1000.jpeg" alt="liked-songs">
+                        <p>Big Boss Rabbit</p>
+                        <p class="artist">Freddie Gibbs</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-album" src="https://images.genius.com/9736a1e8ad4f09de27696b5b7d99ea75.1000x1000x1.jpg" alt="liked-songs">
+                        <p>Chi More Pe Mme</p>
+                        <p class="artist">Cosang</p>
+                    </div>
+
+                    <div class="card">
+                        <img class="img-album" src="https://images-na.ssl-images-amazon.com/images/I/51dSkFNGiGL._AC_SY450_.jpg" alt="liked-songs">
+                        <p>Zodiac Killah</p>
+                        <p class="artist">DJ Nu-Mark</p>
+                    </div>
+                </div>
+
+            </div>  
+        </main>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
